@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name=”description” >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <title>My Portfolio Site</title>
+</head>
+<body class="default-page">
+  <!-- ヘッダー -->
+  <header class="portfolio-header full-width scroll-target">
+    <div class="header-contents inner">
+      <div class="profile-main-contents">
+        <div class="profile-text-box">
+          <h2 class="profile-title">Profile</h2>
+          <div class="profile-easy-info">
+            <div class="profile-icon">
+              <i class="fas fa-portrait"></i>
+            </div>
+            <ul class="profile-text-list">
+              <li>
+                <p>氏名　　　:北川 史晃(きたがわ ふみあき)</p>
+              </li>
+              <li>
+                <p>生年月日　:1997年4月9日</p>
+              </li>
+              <li>
+                <p>出身　　　:滋賀県 草津市</p>
+              </li>
+              <li>
+                <p>血液型　　:AB型</p>
+              </li>
+              <li>
+                <p>趣味　　　:音楽・映画鑑賞 / ゲーム</p>
+              </li>
+            </ul>
+          </div>
+          <p class="profile-text">
+            　高校卒業後、京都外国語専門学校の英米語学科に進学し2018年に卒業しました。その後、大阪デザイナー専門学校に進学しましたが、家庭の事情により中途退学しています。
+            <br>
+            　中途退学後は、デザインの専門学校で知ったwebサイトの制作を仕事にしたいと思い、飲食店でアルバイトをしながらプログラミングスクールでWeb制作について学びました。カリキュラム終了後、就職活動を行い東京のIT企業に内定を頂きましたが、コロナの影響で内定が取り消しになったため、地元の滋賀県に帰ってきました。
+            <br>
+            　地元に帰ってきてからは、京都の清水寺にある『奥丹清水』という飲食店で接客業を約半年間経験させて頂きました。そして現在は、知人の紹介で『YSP滋賀連合会』という若者が地域貢献の為に様々なプロジェクトを行っているNGO団体で、HPの運営や動画制作・パンフレット作り等をしています。
+          </p>
+        </div>
+        <div class="profile-text-box">
+          <h2 class="profile-title">Skill</h2>
+          <ul class="profile-icon-list">
+            <li>
+              <i class="fab fa-html5 skill-icon"></i>
+              <p class="skill-name">HTML</p>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <p class="skill-name">CSS</p>
+            </li>
+            <li>
+              <i class="fab fa-js-square skill-icon"></i>
+              <p class="skill-name">JS/JQuery</p>
+            </li>
+            <li>
+              <i class="fab fa-wordpress skill-icon"></i>
+              <p class="skill-name">WordPress</p>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-text-box">
+          <h2 class="profile-title">Account</h2>
+          <ul class="profile-icon-list">
+            <li>
+              <a class="account-icon" href="https://github.com/fumiaki49" target="_blank">
+                <i class="fab fa-github"></i>
+                <p class="skill-name">GitHub</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインエリア -->
+  <main class="main-area inner scroll-target">
+    <section class="my-works-web">
+      <h2 class="section-title">My Works / Web</h2>
+      <ul class="my-works inner">
+        <img class="full-width" src="./images/ysp-shiga_HP.jpeg" alt="YSP滋賀HP画像" data-modal-name="workA">
+        <img class="full-width" src="./images/mercari-copy.jpg" alt="スクール最終課題" data-modal-name="workB">
+        <img class="full-width" src="./images/todo_app.png" alt="個人制作" data-modal-name="workC">
+      </ul>
+    </section>
+    <section class="my-works-movie">
+      <h2 class="section-title">My Works / Movie</h2>
+      <div class="my-works inner">
+        <img class="full-width" src="http://img.youtube.com/vi/wGgpYVoCsY0/maxresdefault.jpg" alt="ピースビワイチ紹介動画" data-modal-name="workD">
+        <img class="full-width" src="http://img.youtube.com/vi/1vxnKMw26mg/maxresdefault.jpg" alt="ピースパートナーフェスダイジェスト動画" data-modal-name="workE">
+      </div>
+    </section>
+  </main>
+
+
+  <!-- モーダル -->
+  <div class="modal full-width workA">
+    <div class="modal-content-box">
+      <p class="close-btn">×</p>
+      <div class="modal-body">
+        <h2 class="modal-title">YSP滋賀連合会 / 公式HP</h2>
+        <img class="modal-img full-width" src="./images/ysp-shiga_HP.jpeg" alt="YSP滋賀HP画像">
+        <p class="modal-text">
+          　現在働いているNGO団体の公式HPを作成しました。wordpressを使用しており、オリジナルテーマの作成からHPの公開までさせて頂きました。また、HPの更新も担当しています。
+        </p>
+        <div class="modal-btns">
+          <a href="https://ysp-shiga.org/" class="open-btn" target="_blank">開く</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal full-width workB">
+    <div class="modal-content-box">
+      <p class="close-btn">×</p>
+      <div class="modal-body">
+        <h2 class="modal-title">プログラミングスクール / 最終課題</h2>
+        <img class="modal-img full-width" src="./images/mercari-copy.jpg" alt="プログラミングスクール最終課題">
+        <p class="modal-text">
+          　スクールの最終課題で作成したコピーアプリです。同じ時期に学習を始めた3名とグループを組み、協力して作成しました。
+        </p>
+        <p class="modal-text">
+          　詳細資料にチーム開発を通して、得られた知見や使用した技術などをまとめていますので、是非ご確認ください。
+        </p>
+        <div class="modal-btns">
+          <a class="open-btn" href="https://docs.google.com/document/d/1qpiB1fJ1Q0fkkbEgyqUTQXfC7FYoYa8IL4fpAvBXMbU/edit?usp=sharing" target="_blank">
+            詳細資料
+          </a>
+          <a class="open-btn" href="https://github.com/fumiaki49/freemarket_sample_52a" target="_blank">
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal full-width workC">
+    <div class="modal-content-box">
+      <p class="close-btn">×</p>
+      <div class="modal-body">
+        <h2 class="modal-title">ToDoList / 個人制作</h2>
+        <img class="modal-img full-width" src="./images/todo_app.png" alt="個人制作webアプリ">
+        <p class="modal-text">
+          　localStorageを利用したToDoアプリを作成しました。タスクは期限と優先順位を設定することができ、作成したタスクはソート機能で並び替えできます。
+        </p>
+        <div class="modal-btns">
+          <a class="open-btn" href="https://fumiaki49.github.io/todo_app/dist/index.html" target="_blank">
+            開く
+          </a>
+          <a class="open-btn" href="https://github.com/fumiaki49/todo_app" target="_blank">
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal full-width workD">
+    <div class="modal-content-box">
+      <p class="close-btn">×</p>
+      <div class="modal-body">
+        <h2 class="modal-title">ピースビワイチ・ショートムービー / YSP滋賀連合会</h2>
+        <div class="modal-movie full-width">
+          <iframe id="biwaichi" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="modal-text">
+          　YSP滋賀連合会のプロジェクトのひとつである「ピースビワイチ」のショートムービーを作成しました。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal full-width workE">
+    <div class="modal-content-box">
+      <p class="close-btn">×</p>
+      <div class="modal-body">
+        <h2 class="modal-title">ピースパートナーフェス・ダイジェスト動画 / YSP滋賀連合会</h2>
+        <div class="modal-movie full-width">
+          <iframe id="pice-partner" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="modal-text">
+          　2021年12月11日に、滋賀県守山市にあるSDGs発信拠点「Future Lab」にて、西日本にあるYSPの各連合会とオンラインで繋ぎ、SDGs17の目標達成の為に、どのような取り組みをしているのかを発信するイベントが開催されました。
+        </p>
+        <p class="modal-text">
+          この動画は、滋賀会場や中継の様子をまとめた物です。
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- フッター -->
+  <footer class="portfolio-footer full-width">
+    <div class="footer-contents inner">
+      <ul class="footer-nav">
+        <li>TOP</li>
+        <li>My Works</li>
+      </ul>
+      <p class="copy-right">&copy;Kitagawa fumiaki</p>
+    </div>
+  </footer>
+</body>
+</html>
