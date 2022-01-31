@@ -71,4 +71,23 @@
   .copy-right {
     font-size: 14px;
   }
+
+}
+
+@media screen and (max-width: 411px) {
+  .profile-table td {
+    padding-left: 10px;
+  }
+
+  .profile-icon-list li {
+    margin-right: 10px;
+  }
+
+  .profile-icon-list .skill-icon, .profile-icon-list .account-icon {
+    font-size: 40px;
+  }
+
+  .profile-icon-list .skill-name {
+    font-size: 12px;
+  }
 }
