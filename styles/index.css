@@ -60,6 +60,14 @@
   margin-top: 20px;
 }
 
+.profile-table th {
+  font-weight: lighter;
+}
+
+.profile-table td {
+  padding-left: 30px;
+}
+
 .profile-icon-list {
   display: flex;
   text-align: center;
@@ -67,6 +75,10 @@
 
 .profile-icon-list li {
   margin-right: 30px;
+}
+
+.profile-icon-list li:last-child {
+  margin-right: 0;
 }
 
 .profile-icon-list .skill-icon, .profile-icon-list .account-icon {
@@ -103,13 +115,13 @@
   color: #817F7F;
   border-bottom: 3px solid #817F7F;
   padding-bottom: 5px;
+  margin-bottom: 40px;
 }
 
 .my-works {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
-  margin-top: 40px;
   width: 100%;
 }
 
