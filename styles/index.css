@@ -91,12 +91,8 @@
   height: auto;
 }
 
-.main-area .inner {
-  width: 90%;
-} 
-
 .my-works-web, .my-works-movie {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .section-title {
@@ -114,6 +110,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .my-works img {
