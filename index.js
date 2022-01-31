@@ -17,10 +17,18 @@ $(function () {
     }
   });
 
-  $(".close-btn").on('click', function() {
-    $('.modal-movie iframe').attr('src', '');
-    $('.modal').fadeOut();
-    $('html, body').removeClass('cancel-scroll');
+  $(document).on('click', function(event) {
+    let target = $(event.target);
+
+    if (target.hasClass('modal')) {
+      $('.modal').fadeOut();
+      $('.modal-movie iframe').attr('src', '');
+      $('html, body').removeClass('cancel-scroll');
+    } else if (target.hasClass('close-btn')) {
+      $('.modal').fadeOut();
+      $('.modal-movie iframe').attr('src', '');
+      $('html, body').removeClass('cancel-scroll');
+    }
   });
 
 
