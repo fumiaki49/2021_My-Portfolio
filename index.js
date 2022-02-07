@@ -35,7 +35,6 @@ $(function () {
   $('.footer-nav li').on('click', function() {
     let order = $(this).index();
     let sameOrder = $('.scroll-target').eq(order).offset().top;
-    console.log(sameOrder);
     $('html, body').animate({scrollTop: sameOrder});
   });
 });
