@@ -31,7 +31,7 @@
 
 .profile-text-box {
   line-height: 30px;
-  letter-spacing: 1px;
+  letter-spacing: 0.05px;
   margin-top: 25px;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .my-works-web, .my-works-movie {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .section-title {
