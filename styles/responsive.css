@@ -4,6 +4,21 @@
   }
 }
 
+@media screen and ( max-width: 768px) and ( min-width: 601px) {
+  .portfolio-footer {
+    margin-top: 80px;
+  }
+
+  .modal-content-box {
+    width: 70%;
+  }
+
+  .close-btn {
+    top: 1px;
+    right: 5px;
+  }
+}
+
 @media screen and ( max-width: 600px) {
   .inner {
     width: 80%;
