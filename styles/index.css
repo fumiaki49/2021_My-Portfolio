@@ -5,7 +5,7 @@
 
 .default-page {
   background-color: #CEECEA;
-  color: #5a5858;
+  color: #434343;
   font-size: 16px;
   font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","BIZ UDPGothic",Meiryo,sans-serif;
 }
@@ -31,7 +31,7 @@
 
 .profile-text-box {
   line-height: 30px;
-  letter-spacing: 0.05px;
+  letter-spacing: calc(1px - .0625em);
   margin-top: 25px;
 }
 
