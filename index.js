@@ -1,4 +1,21 @@
 $(function () {
+  $(window).scroll(function(){
+    let windowHeight = $(window).height();
+    let scroll = $(window).scrollTop();
+
+    $('.my-works li').each(function() {
+      let targetPosition = $(this).offset().top;
+      if(scroll > targetPosition - windowHeight + 150 ) {
+        $(this).css({
+          "opacity": "1",
+          "visibility": "visible",
+          "transform": "translateY(0)"
+        });
+      }
+    });
+  });
+
+
   $(".my-works img").on('click', function() {
     let workData = $(this).data('modal-name');
     let sameItem = document.querySelector('.' + workData);
