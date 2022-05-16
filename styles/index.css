@@ -125,6 +125,14 @@
   width: 100%;
 }
 
+.my-works li {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 2s, visibility 2s, transform 1.5s;
+}
+
+
 .my-works img {
   transition: all 0.3s;
   box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 0px 0px 0px 1px rgba(10,10,10,0.02);
